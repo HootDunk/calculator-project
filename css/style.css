@@ -1,0 +1,49 @@
+#calculator-body {
+    height: 297px;
+    width: 250px;
+ 
+    
+    margin: 30 auto 0;
+    border: 1px solid;
+    background-color: black;
+}
+
+.btn-group button {
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    
+}
+
+.button {
+    width: 25%;
+}
+
+.bottom-button {
+    width: 50%;
+}
+
+.display {
+    display: inline-flex;
+    height: 100px;
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+}
+
+.screen {
+    margin: auto 20px;   
+    background: black;
+    height: 60px;
+    width: 100%;
+    text-align: right;
+}
+
+.screen h1 {
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 40px;
+    
+}
+

@@ -16,3 +16,5 @@ Lets see..
 -needed to allow decimal points but then turn off the button after it has been used once
 
 So the end result was a simple calculator but there is more going on then meets the eye.  As I was programming, I thought of different(better/more efficient) ways to code the project and I look forward to coming back and re-factoring with these ideas in mind.
+
+Be sure to check it out https://hootdunk.github.io/calculator-project/

@@ -121,13 +121,13 @@ let updateDisplay = (buttonPress) => {
         if(operator == ""){
             num1 += buttonPress;
             displayValue.textContent = num1;
-            console.log("number 1 updated")
+            
         }
         //operator has been pressed, updating num2
         else if(operator != ""){
             num2 += buttonPress;
             displayValue.textContent = num2;
-            console.log("number 2 updated")
+            
         }
     }
     // if an operator has been entered
@@ -150,7 +150,7 @@ let updateDisplay = (buttonPress) => {
             displayValue.textContent = num1;
             num2 = "";
             operator = "";
-            console.log("results calculated")
+            
         }
 
     }
@@ -179,9 +179,6 @@ buttons.forEach((button) => {
     button.addEventListener('click', () => {
         updateDisplay(button.id)
         
-        console.log(`num1 = ${num1}`)
-        console.log(`num2 = ${num2}`)
-        console.log(`operator = ${operator}`)
         
     });
 });

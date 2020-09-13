@@ -94,21 +94,19 @@ let addDecimal = () => {
 let changeSign = () => {
     if(operator == ""){
         if(num1 == "" || num1 == "0") return;
-        else if (parseInt(num1) > 0) num1 = "-" + num1;
-        else if (parseInt(num1) < 0) {
-            let tempNum1 = parseInt(num1) * -1;
-            num1 = tempNum1.toString();
+        else{
+            num1 *= -1;
+            displayValue.textContent = num1;
         }
-        displayValue.textContent = num1;
+            
     }
     else if (operator != ""){
         if(num2 == "" || num2 == "0") return;
-        else if (parseInt(num2) > 0) num2 = "-" + num2;
-        else if (parseInt(num2) < 0){
-            let tempNum2 = parseInt(num2) * -1;
-            num2 = tempNum2.toString();
+        else{
+            num2 *= -1;
+            displayValue.textContent = num2;
         }
-        displayValue.textContent = num2;
+        
     }
 }
 

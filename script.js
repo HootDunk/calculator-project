@@ -76,7 +76,7 @@ let addDecimal = () => {
     if(operator == ""){
         //if num1 is already a decimal, exit
         if (num1 == "") num1+= ".";
-        else if((parseInt(num1) % 1 != 0)) return;
+        else if((num1 % 1 != 0)) return;
         //else add decimal to num1
         else{
             num1 += ".";
@@ -84,7 +84,7 @@ let addDecimal = () => {
 
     }else if(operator != ""){
         if(num2 == "") num2+= ".";
-        else if ((parseInt(num2) % 1 != 0)) return;
+        else if ((num2 % 1 != 0)) return;
         else {
             num2 += ".";
         }
@@ -109,6 +109,7 @@ let changeSign = () => {
         
     }
 }
+
 
 //would be better to create functions for the conditions below and then move the updateDisplay conditions into the onClick event listener.
 //lets first update the values, then update the display
